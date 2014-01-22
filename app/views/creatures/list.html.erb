@@ -1,0 +1,7 @@
+<h1>Creatures</h1>
+<% @creatures.each do |creature| %>
+	<div>
+		Name: <%= creature[:name] %><a href="/creatures/<%= creature[:id]%>">  View</a>
+	</div>
+	<br>
+<% end %>
